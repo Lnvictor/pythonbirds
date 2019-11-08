@@ -52,7 +52,7 @@ def _animar(delta_t, fase, passo, tempo, msg):
 
 
 def _jogar(delta_t, fase, passo, tempo, msg):
-    while not fase.acabou():
+    while not fase.acabou(tempo):
         tempo = desenhar_e_esperar(delta_t, fase, passo, tempo, msg)
         entrada = ouvir_teclado()
         if entrada:

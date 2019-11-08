@@ -6,7 +6,6 @@ from unittest.case import TestCase
 import placa_grafica
 from templates import FRAMES
 
-
 class TestesDoMotor(TestCase):
     def teste_inverter_coordenadas(self):
         self.assertTupleEqual((0, placa_grafica.ALTURA - 1), placa_grafica.normalizar_coordenadas(0, 0))
